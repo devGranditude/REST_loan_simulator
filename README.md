@@ -32,17 +32,24 @@ Feel free to use any programming language you like as long as it’s not
 too obscure, but make sure the code is well structured and sufficiently
 covered by test cases.
 
+
 ### Prerequisites
 
-1) Install Flask
+1) Virtual env + Flask
+
+Python 2.7 Anaconda
+
+conda install -c anaconda virtualenv
+At the project root --> virtualenv venv_anyfin
+pip install Flask
+
+export FLASK_APP=services/hello_flask.py
+export FLASK_DEBUG=1
 
 2) Install MongoDB
 
 3) Install POSTman (or other web client simulator)
 
-4) Virtual env
-
-Python 2.7 Anaconda
 
 ### Using
 
