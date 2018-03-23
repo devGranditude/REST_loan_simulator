@@ -11,9 +11,11 @@ The calculator should provide a command line interface and take basic `
 loan information as input as exemplified below (the exact API is up to
 you, but all arguments are required).
 
-`payment-calculator --balance 12500 --start-date 2018-03-20 --interest-rate 7.95 --min-amortization-rate 4 --min-amortization 100
+`payment-calculator --balance 12500 --start-date 2018-03-20 --interest-rate 7.95 --min-amortization-rate 4 --min-amortization 100`
 
 Each monthly minimum payment consists of:
+
+
 - The interest charge for the number of days in the month (the yearly
 nominal interest rate is 7,95% in the example above)
 
