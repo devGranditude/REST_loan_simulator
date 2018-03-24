@@ -42,8 +42,10 @@ Python 2.7 Anaconda
 conda install -c anaconda virtualenv
 At the project root --> virtualenv venv_anyfin
 pip install Flask
+pip install flask-restful
+flask run
 
-export FLASK_APP=services/hello_flask.py
+export FLASK_APP=app.py
 export FLASK_DEBUG=1
 
 2) Install MongoDB
