@@ -1,6 +1,7 @@
-from flask import Flask
-from flask_restful import reqparse, abort, Api, Resource
-from resources.loan import Loan
+from flask import Flask, request
+#from flask.views import MethodView
+from flask_restful import Api #, reqparse, abort, Api, Resource
+from resources.Loan import Loan
 
 app = Flask(__name__)
 api = Api(app)

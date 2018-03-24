@@ -1,5 +1,4 @@
-from flask_restful import fields, marshal_with
-
+from flask_restful import fields
 from schema import MonthlyPaymentSchema
 
 class LoanSchema(object):
@@ -7,4 +6,4 @@ class LoanSchema(object):
     #startingDate = fields.DateTime()
     #yearlyInterestRate = fields.Float()
     #amortizationMinimum = fields.Float()
-    payment = fields.Nested(MonthlyPaymentSchema, many=True)
+    payment = fields.Nested(MonthlyPaymentSchema)

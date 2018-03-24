@@ -1,2 +1,2 @@
-from schema.loanSchema import LoanSchema
-from schema.monthlyPaymentSchema import MonthlyPaymentSchema
+from schema.LoanSchema import LoanSchema
+from schema.MonthlyPaymentSchema import MonthlyPaymentSchema

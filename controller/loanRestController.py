@@ -1,6 +1,10 @@
-from schema import loanSchema
+from schema import LoanSchema
 
-def caluclate():
-    pass
+def read(balance, start_date, interest_rate, amortization_min):
+    
+
+    return {'the balance you sent is': balance}
+
+#type=lambda x: datetime.strptime(x, constants.date_format))
 
 

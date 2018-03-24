@@ -1,5 +1,5 @@
 from config import constants
-from schema import loanSchema, monthlyPaymentSchema
+from schema import LoanSchema, MonthlyPaymentSchema
 
 
 ##Set all of monthly payement calculations
