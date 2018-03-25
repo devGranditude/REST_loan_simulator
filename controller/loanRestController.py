@@ -1,10 +1,7 @@
 from schema import LoanSchema
+from services import paymentEngine
 
 def read(balance, start_date, interest_rate, amortization_min):
-    
-
-    return {'the balance you sent is': balance}
-
-#type=lambda x: datetime.strptime(x, constants.date_format))
+    return paymentEngine.paymentCalculator(balance, start_date, interest_rate, amortization_min)
 
 

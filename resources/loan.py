@@ -2,6 +2,7 @@ from controller import LoanRestController
 from flask import request
 from flask_restful import Resource, abort, reqparse
 from config import constants
+from datetime import datetime
 
 
 class Loan(Resource):
@@ -21,7 +22,7 @@ class Loan(Resource):
 
         #Parse all data contained into the request
         balance = args['balance']
-        start_date = args['start_date']
+        start_date = datetime.strptime(args['start_date'], constants.date_format)
         interest_rate = args['interest_rate']
         amortization_min = args['amortization_min']
 

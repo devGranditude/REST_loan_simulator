@@ -43,7 +43,7 @@ conda install -c anaconda virtualenv
 At the project root --> virtualenv venv_anyfin
 pip install Flask
 pip install flask-restful
-flask run
+
 
 export FLASK_APP=app.py
 export FLASK_DEBUG=1
@@ -55,11 +55,22 @@ export FLASK_DEBUG=1
 
 ### Using
 
-1) Swagger
+1) Set the environnement
+flask run (debug mode) 
++ dont forget to export env variables with 
+export FLASK_APP=app.py
+export FLASK_DEBUG=1 
 
-2) Authentication
+2) Payloads and request
+Why post method and not get
+Body structure to send
+Localhost url to reach
 
-3) Payloads
+### Project structure
+
+Explaining each folders and relations between them
+
+
 
 
 
