@@ -33,44 +33,68 @@ too obscure, but make sure the code is well structured and sufficiently
 covered by test cases.
 
 
-### Prerequisites
+### Using the API
 
-1) Virtual env + Flask
+#### 1) Set the environment
 
-Python 2.7 Anaconda
-
+All of this project was built under Python 2.7 with the Anaconda packages (available at https://www.anaconda.com/download/). 
+You first need to instal virtualenv by the following command:
+```
 conda install -c anaconda virtualenv
-At the project root --> virtualenv venv_anyfin
+```
+Or by the command pip:
+```
+pip install virtualenv
+```
+
+Then, at the project root, create your own virtualenvironment(please keep the same name or update the gitignore file):
+```
+virtualenv venv_anyfin
+```
+
+Now, you need to install flask and flask rest-ful modules into your virtualenv. The first step is to activate your virtualenv...
+```
+source venv_anyfin/bin/activate
+```
+
+... and install flask modules inside
+```
 pip install Flask
 pip install flask-restful
+```
 
 
+The following environment variables need to be setted:
+```
+export FLASK_APP=app.py
+export FLASK_DEBUG=1
+```
 export FLASK_APP=app.py
 export FLASK_DEBUG=1
 
-2) Install MongoDB
 
-3) Install POSTman (or other web client simulator)
+#### 2) Launch the server
 
+Launch the server from your project root:
+```
+source venv_anyfin/bin/activate
+flask run
+```
 
-### Using
+#### 3) Request /payment_calculator
 
-1) Set the environnement
-flask run (debug mode) 
-+ dont forget to export env variables with 
-export FLASK_APP=app.py
-export FLASK_DEBUG=1 
+The goal of this project is to simulate loan by getting main information detail about each monthly payment.
+Inputs parameters are sent, and that's the main raison for me to use the /POST route (/GET should receive "payloads").
 
-2) Payloads and request
-Why post method and not get
-Body structure to send
-Localhost url to reach
+By default Flask set the localhost url at `http://127.0.0.1:5000/`
 
-### Project structure
-
-Explaining each folders and relations between them
-
-
-
-
+Here is the JSON body to be sent (feel free to modify parameters value):
+```
+{
+	"balance": 100000,
+	"start_date": "2018-01-14",
+	"interest_rate": 0.075,
+	"amortization_min": 150
+}
+```
 
