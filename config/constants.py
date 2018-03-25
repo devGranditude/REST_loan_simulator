@@ -11,4 +11,4 @@ limitDay = 13
 date_format = '%Y-%m-%d'
 
 #We assume we always have 365 days per year
-yearlyDayNumber = 365
+yearlyDayNumber = 365.0
