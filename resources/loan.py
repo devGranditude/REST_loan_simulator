@@ -6,12 +6,12 @@ from datetime import datetime
 
 
 class Loan(Resource):
+    controller = eval(self.__class__.__name__ + "RestController")
+
     def get(self):
         abort(http_status_code=404, errors='Not yet developed. This will be used to list all persisted loans')
 
     def post(self):
-        controller = eval(self.__class__.__name__ + "RestController")
-
         #Implement the request parser
         parser = reqparse.RequestParser()
         parser.add_argument('balance', type=float)

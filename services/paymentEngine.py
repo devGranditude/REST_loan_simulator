@@ -13,6 +13,7 @@ def paymentCalculator(balance, start_date, interest_rate, amortization_min):
     n = 0
     paymentDate = datetimeTools.movetoLastDay(start_date)
     data = []
+    debt0fInterest = 0
 
     #If loan is subscribed after 13th of the first of month
     if datetimeTools.isSubscribedAfter13th(start_date):
