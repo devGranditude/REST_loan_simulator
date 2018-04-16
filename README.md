@@ -1,8 +1,8 @@
-# anyfin_assignment
+# README
 
-#### Instructions
+#### Main goals
 
-The goal of this assignment is to create a payment calculator for
+The goal is to create a payment calculator for
 flexible loans (i.e. without a predetermined payment period) listing
 the monthly payments assuming the customer pays exactly the minimum
 required amount each month.
@@ -49,12 +49,12 @@ pip install virtualenv
 
 Then, at the project root, create your own virtualenvironment(please keep the same name or update the gitignore file):
 ```
-virtualenv venv_anyfin
+virtualenv venv_loan
 ```
 
 Now, you need to install flask and flask rest-ful modules into your virtualenv. The first step is to activate your virtualenv...
 ```
-source venv_anyfin/bin/activate
+source venv_loan/bin/activate
 ```
 
 ... and install flask modules inside
@@ -77,7 +77,7 @@ export FLASK_DEBUG=1
 
 Launch the server from your project root:
 ```
-source venv_anyfin/bin/activate
+source venv_loan/bin/activate
 flask run
 ```
 
